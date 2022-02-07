@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="css/search.css" />
+</head>
+<body>
+    <h1>Hi <%= name %> welcome to our..</h1>
+
+    <h1>Really Rad Retail Search!</h1>
+
+    <form method="POST" action="/result">
+        <label>Search: <input type="text" name="search" placeholder= "Enter Key Words" /></label>
+        <select name="roles" id="role">
+            <option value="postgres">Postgres</option>
+            <option value="mongodb">MongoDB</option>
+            <option value="both" name='both'>Both</option>
+            </select>
+        <button type="submit">SEARCH! them databases </button> 
+    </form>
+    
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+    </form>
+    
+
+</body>
+</html>
